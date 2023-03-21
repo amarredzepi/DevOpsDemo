@@ -109,7 +109,6 @@ public class PathListEntry<KEYTYPE> {
 	public void setTooltip(String tooltip) {
 		this.tooltip = tooltip;
 	}
-	
 	public String getForm() {
 		if (form == null) {
 			return null;

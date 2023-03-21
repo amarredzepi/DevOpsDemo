@@ -87,6 +87,60 @@ export class GuiModel {
                         }
                     ]
                 },
+                {
+                    "id": "TermineForm",
+                    "title": { default: "Termine" },
+                    "url": "/termine",
+                    "formFieldList": [
+                        {
+                            "id": "title",
+                            "type": "text",
+                            "name": { default: "Titel" },
+                            "required": true,
+                            "width": 2
+                        },
+                        {
+                            "id": "description",
+                            "type": "text",
+                            "name": { default: "Description" },
+                            "newRow": true,
+                            "maxLength": 4000,
+                            "height": 2,
+                            "width": 2
+                        },
+                        {
+                            "id": "datum_von",
+                            "type": "text",
+                            "name": { default: "Datum von" },
+                            
+                            "maxLength": 4000,
+                            "height": 2,
+                            "width": 2
+                        },
+                        {
+                            "id": "datum_bis",
+                            "type": "text",
+                            "name": { default: "Datum bis" },
+                            
+                            "maxLength": 4000,
+                            "height": 2,
+                            "width": 2
+                        }, 
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
             ],
             "pageList": [
                 {
@@ -107,6 +161,18 @@ export class GuiModel {
                             "width": 2,
                             "newRow": true,
                         },
+                        {
+                            
+                            "type": "button",
+                            "name": { default: "Termin-Liste" },
+                            "icon": "fa-file-alt",
+                            "color": "red",
+                            "page": "Termine",
+                            "width": 2,
+                            "newRow": true,
+                            }
+                            
+                            
                     ]
                 },
                 {
@@ -138,7 +204,37 @@ export class GuiModel {
                         }
                     ]
                 },
+                {         
+                    "id": "Termine",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": { default: "Neuer Termin" },
+                            "icon": "fa-user",
+                            "color": "red",
+                            "width": 2,
+                            "form" : {
+                                "form" : "TermineForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "name": "Termine",
+                            "icon": "fa-user",
+                            "color": "grey",
+                            "search": true,
+                            "url": "/termine",
+                            "form": {
+                                "form": "TermineForm"
+                            }
+                        }
+                    ]
+                }
             ]
+            
         }
     };
 
