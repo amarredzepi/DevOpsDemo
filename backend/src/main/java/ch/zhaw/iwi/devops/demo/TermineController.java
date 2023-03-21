@@ -85,7 +85,7 @@ private Map<Integer, Termine> termine = new HashMap<Integer, Termine>();
         this.termine.put(id, termin);
     }
 
-    @DeleteMapping("/services/termine/{key}")
+    @DeleteMapping("/services/termine/{id}")
     public Termine deleteTermine(@PathVariable Integer id) {
         return this.termine.remove(id);
     }
