@@ -6,19 +6,19 @@ public class Termine {
     private int id;
     private String title;
     private String description;
-    private String datum_von;
-    private String datum_bis;
+    private String datumvon;
+    private String datumbis;
    
 
     public Termine(){
     }
     
-    public Termine(int id, String title, String description, String datum_von, String datum_bis) {
+    public Termine(int id, String title, String description, String datumvon, String datumbis) {
         this.id = id;
         this.title = title;
         this.description = description;
-        this.datum_von = datum_von;
-        this.datum_bis = datum_bis;
+        this.datumvon = datumvon;
+        this.datumbis = datumbis;
     }
 
     public int getId() {
@@ -36,11 +36,13 @@ public class Termine {
     public String getDescription() {
         return description;
     }
-    public String getDatum_von() {
-        return datum_von;
+    
+    public String getDatumvon() {
+        return datumvon;
     }
-    public String getDatum_bis() {
-        return datum_bis;
+
+    public String getDatumbis() {
+        return datumbis;
     }
     
 }

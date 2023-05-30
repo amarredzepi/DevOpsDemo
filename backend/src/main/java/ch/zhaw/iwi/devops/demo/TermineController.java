@@ -58,11 +58,11 @@ private Map<Integer, Termine> termine = new HashMap<Integer, Termine>();
             entry.setKey(termin.getId(), "termineKey");
             entry.setName(termin.getTitle());
             entry.getDetails().add(termin.getDescription());
-            entry.getDetails().add(termin.getDatum_von());
-            entry.getDetails().add(termin.getDatum_bis());
+            entry.getDetails().add(termin.getDatumvon());
+            entry.getDetails().add(termin.getDatumbis());
             entry.setTooltip(termin.getDescription());
-            entry.setTooltip(termin.getDatum_von());
-            entry.setTooltip(termin.getDatum_bis());
+            entry.setTooltip(termin.getDatumvon());
+            entry.setTooltip(termin.getDatumbis());
             result.add(entry);
         }
         return result;
