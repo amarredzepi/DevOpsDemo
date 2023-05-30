@@ -88,7 +88,7 @@ export class GuiModel {
                     ]
                 },
                 {
-                    "id": 'TermineForm',
+                    "id": "TermineForm",
                     "title": { default: "Termine" },
                     "url": "/termine",
                     "formFieldList": [
@@ -109,7 +109,7 @@ export class GuiModel {
                             "width": 2
                         },
                         {
-                            "id": 'datum_von',
+                            "id": "datum_von",
                             "type": "text",
                             "name": { default: "Datum von" },
                             
