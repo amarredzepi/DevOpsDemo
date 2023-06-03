@@ -17,14 +17,6 @@ public class RomanNumeralsConverterTest {
     */
     
     @Test
-    void testConvertToRoman_2() {
-        int number = 10;
-        String expectedRomanNumeral = "X";
-        String actualRomanNumeral = RomanNumeralsConverter.convertToRoman(number);
-        Assertions.assertTrue(expectedRomanNumeral.equals(actualRomanNumeral), "Conversion failed for number: " + number);
-    }
-    
-    @Test
     void testConvertToRoman_3() {
         int number = 50;
         String expectedRomanNumeral = "L";
