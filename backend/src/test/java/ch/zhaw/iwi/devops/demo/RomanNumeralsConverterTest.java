@@ -22,7 +22,7 @@ public class RomanNumeralsConverterTest {
         int number = 50;
         String expectedRomanNumeral = "L";
         String actualRomanNumeral = RomanNumeralsConverter.convertToRoman(number);
-        Assertions.assertTrue(expectedRomanNumeral.equals(actualRomanNumeral), "Conversion failed for number: " + number);
+        Assertions.assertTrue(expectedRomanNumeral.equals(actualRomanNumeral), "Conversion failed for number: " + numbe
     }
     
     @Test
